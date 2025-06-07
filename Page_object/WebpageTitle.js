@@ -1,8 +1,6 @@
 class WebpageTitle {
     constructor(page) {
         this.page = page;
-        this.imglocator =  page.locator('img[alt="Website for automation practice"]');
-        this.titlelocator = page.getAttribute('img[src="/static/images/home/logo.png"]','alt');
     }
 
     async Urlgoto() {

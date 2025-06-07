@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "openai": "^5.1.0",
+    "playwright": "^1.52.0"
+  },
+  "name": "pw_automation_practice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Mukesh J",
+  "license": "ISC",
+  "description": "My Playwright Automation Practice",
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.15.29"
+  }
+}

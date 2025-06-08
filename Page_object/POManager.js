@@ -1,11 +1,12 @@
 const { WebpageTitle } = require('../Page_object/WebpageTitle');
 const {LoginSignup} = require('../Page_object/LoginSignup');
+const {LoginPage} = require('../Page_object/LoginPage');
 class POManager {
     constructor(page) {
         this.page = page;
         this.webpagetitle = new WebpageTitle(this.page);
         this.loginsignup = new LoginSignup(this.page);
-       // this.loginPage = new LoginPage(this.page);
+        this.loginpage= new LoginPage(this.page);
     }
 
     getWebpageTitle() {
@@ -15,10 +16,9 @@ class POManager {
         return this.loginsignup;
     }
 
-   /* getLoginPage() {
-        return this.loginPage;
-    } */
-
+   getLoginPage() {
+        return this.loginpage;
+    } 
 }
 
 module.exports = { POManager };

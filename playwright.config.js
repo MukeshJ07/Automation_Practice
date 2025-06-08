@@ -11,7 +11,7 @@ const config = {
       name: 'PW_AUTOMATION_PRACTICE', // Mention the file name of Project or leave it it should take the default Project name
       use: {
         browserName: 'chromium', // Correct key is browserName (case-sensitive)
-        headless: false, // Run in headed mode browser will open-showcase
+        headless: true, // Run in headed mode browser will open-showcase
         acceptDownloads: true,
         screenshot: 'only-on-failure',
         trace: 'retain-on-failure', // Captures trace only if test fails
